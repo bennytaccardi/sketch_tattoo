@@ -279,6 +279,20 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+          {/* Section Title */}
+          <motion.div 
+            className="text-center mb-12 sm:mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4" data-testid="benefits-title">Come possiamo aiutarti</h3>
+            <p className="text-muted-foreground text-base sm:text-lg" data-testid="benefits-subtitle">
+              Come SketchTattoo ti aiuta
+            </p>
+          </motion.div>
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {/* Benefit 1 */}
             <motion.div 
