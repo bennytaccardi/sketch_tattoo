@@ -7,6 +7,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { Upload, Image, Eye, Clock, Heart, Handshake } from "lucide-react";
 import heroVideoSrc from "@assets/1086524-hd_1280_720_25fps_1757086339730.mp4";
+import devicePrototypeGif from "@assets/file-YwCcOT43HD-unscreen_1757086674659.gif";
 
 interface EmailSignup {
   email: string;
@@ -162,6 +163,29 @@ export default function Home() {
             </p>
           </motion.div>
         </motion.div>
+      </section>
+
+      {/* Device Prototype Section */}
+      <section className="py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="flex justify-center"
+          >
+            <div className="relative">
+              <img
+                src={devicePrototypeGif}
+                alt="SketchTattoo app prototype demonstration"
+                className="max-w-sm w-full h-auto rounded-3xl shadow-2xl"
+                data-testid="device-prototype"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-background/20 rounded-3xl pointer-events-none"></div>
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* How It Works Section */}
