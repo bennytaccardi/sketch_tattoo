@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       {/* Device Prototype Section */}
-      <section className="py-24 px-6">
+      <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -179,7 +179,7 @@ export default function Home() {
               <img
                 src={devicePrototypeGif}
                 alt="SketchTattoo app prototype demonstration"
-                className="max-w-sm w-full h-auto rounded-3xl shadow-2xl"
+                className="max-w-md md:max-w-lg w-full h-auto rounded-3xl shadow-2xl"
                 data-testid="device-prototype"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-background/20 rounded-3xl pointer-events-none"></div>
