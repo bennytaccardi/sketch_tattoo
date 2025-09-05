@@ -1,0 +1,67 @@
+Generate a minimalist, elegant, and highly focused landing page for SketchTattoo, a web app that realistically applies a tattoo to a selected body part in a photo. The page's goal is to immediately capture the attention of tattoo artists and drive them to sign up via email, without any distractions.
+
+Product Overview
+Name: SketchTattoo
+Functionality: Allows tattoo artists to overlay an image of a tattoo onto a photo of a client's body part, providing a realistic preview of the final result.
+Benefits:
+
+Accelerates workflow: Reduces the time needed to create renderings for clients.
+
+Enhances customer retention: Offers clients a clear and professional visualization, increasing trust and satisfaction.
+
+Simplifies the consultation process: Helps the tattoo artist sell the tattoo concept more effectively.
+
+Design and Content Instructions
+Overall Style: Minimalist, clean, elegant, and modern. The aesthetic must be refined and professional, reflecting the art of tattooing in a digital key. The entire page should be cohesive, with impeccable visual harmony.
+
+Color Palette: Use a sober and sophisticated palette. I suggest colors like:
+
+Background: Dark or grey tones (e.g., deep black, charcoal grey).
+
+Text: White or light grey for maximum readability.
+
+Accents: A single, elegant, and saturated secondary color, such as dark burgundy, petrol blue, or forest green, to be used strategically for CTAs and details.
+
+Page Structure:
+The landing page must be very short and concise, composed only of the following sections:
+
+Header (Above the Fold):
+
+Logo: A PNG image with the product name, SketchTattoo.
+
+Main Visual Element: Under or behind the logo, include a short looping video or an animated GIF (not too heavy) showing a tattoo artist at work with their client in a stylish studio. The animation must be fluid and suggest professionalism and creativity.
+
+Headline: An impactful and concise phrase that immediately communicates the product's value. Examples: "Visualize your next masterpiece" or "The future of tattooing is here."
+
+Sub-headline: A brief sentence that explains the functionality. Ex: "The web app that applies your designs to your clients' bodies in real-time."
+
+Call to Action (CTA): A button or an email sign-up field. The text should be inviting and direct, such as "Join the waitlist" or "Submit your email."
+
+"How It Works" Section:
+
+Animation: An animation (can be a GIF or a mock-up Rive file) that illustrates, in a simple and schematic way, the user's workflow:
+
+Upload a photo of the body.
+
+Upload the tattoo design.
+
+View the realistic result.
+
+The animation must be clean, without frills, and must focus only on the product's functionality. It's a visual preview of the product, not a promotional video.
+
+Static 3-Step Infographic:
+
+Below the animation, create a minimalist infographic consisting of three static icons or illustrations.
+
+Each icon should be accompanied by a title and a brief description to explain the 3 steps of the process, without videos or animations. This reinforces the concept explained in the previous section.
+
+Footer:
+
+An extremely simple footer containing only the logo or product name and, if necessary, a link to "Privacy" or "Terms of Service" (can also be omitted for greater minimalism).
+
+Additional Instructions for Lovable
+Priority: The product's clarity must be immediately obvious. The user must understand what it is about within the first 3 seconds.
+
+Reference: Use the landing page https://landio.framer.website/ as a reference point for style, cleanliness, and minimalist design. Analyze how it uses white (or dark) space, typography, and the harmony of elements.
+
+Focus: The only goal of the page is to collect emails. Avoid any other type of CTA or link that could distract the user.
