@@ -5,7 +5,8 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
-import { Upload, Image, Eye, Clock, Heart, Handshake, Play } from "lucide-react";
+import { Upload, Image, Eye, Clock, Heart, Handshake } from "lucide-react";
+import heroVideoSrc from "@assets/1086524-hd_1280_720_25fps_1757086339730.mp4";
 
 interface EmailSignup {
   email: string;
@@ -83,10 +84,17 @@ export default function Home() {
         {/* Background */}
         <div className="absolute inset-0 hero-bg">
           <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/60 to-background"></div>
-          <div className="absolute inset-0 hero-video flex items-center justify-center">
-            <div className="w-full h-full bg-gradient-to-br from-muted/20 to-background/40 flex items-center justify-center">
-              <Play className="w-24 h-24 text-muted-foreground opacity-30" data-testid="hero-video-placeholder" />
-            </div>
+          <div className="absolute inset-0 hero-video">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover opacity-20 blur-sm"
+              data-testid="hero-background-video"
+            >
+              <source src={heroVideoSrc} type="video/mp4" />
+            </video>
           </div>
         </div>
 
