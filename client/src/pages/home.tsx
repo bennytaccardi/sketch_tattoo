@@ -175,20 +175,40 @@ export default function Home() {
             viewport={{ once: true }}
             className="flex justify-center"
           >
-            <div className="relative">
-              <video
-                src={devicePrototypeGif}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="max-w-xs sm:max-w-md md:max-w-lg w-full h-auto rounded-2xl sm:rounded-3xl shadow-2xl"
-                data-testid="device-prototype"
-              >
-                <source src={devicePrototypeGif} type="video/mp4" />
-                Il tuo browser non supporta il video.
-              </video>
-              <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-background/20 rounded-3xl pointer-events-none"></div>
+            <div className="relative group">
+              {/* Ombra principale */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+              
+              {/* Ombra secondaria */}
+              <div className="absolute -inset-2 bg-gradient-to-br from-foreground/10 to-transparent rounded-2xl blur-lg opacity-40"></div>
+              
+              {/* Container del video con bordo e riflessi */}
+              <div className="relative bg-gradient-to-br from-white/5 to-transparent rounded-2xl sm:rounded-3xl p-1 backdrop-blur-sm border border-white/10">
+                <video
+                  src={devicePrototypeGif}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="max-w-xs sm:max-w-md md:max-w-lg w-full h-auto rounded-xl sm:rounded-2xl shadow-2xl ring-1 ring-white/20"
+                  data-testid="device-prototype"
+                >
+                  <source src={devicePrototypeGif} type="video/mp4" />
+                  Il tuo browser non supporta il video.
+                </video>
+                
+                {/* Riflesso superiore */}
+                <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/20 via-white/10 to-transparent rounded-t-xl sm:rounded-t-2xl pointer-events-none"></div>
+                
+                {/* Riflesso laterale */}
+                <div className="absolute top-0 left-0 bottom-0 w-1/4 bg-gradient-to-r from-white/15 via-white/5 to-transparent rounded-l-xl sm:rounded-l-2xl pointer-events-none"></div>
+              </div>
+              
+              {/* Overlay con gradiente */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-background/20 rounded-2xl sm:rounded-3xl pointer-events-none"></div>
+              
+              {/* Punto di luce */}
+              <div className="absolute top-4 left-4 w-2 h-2 bg-white/60 rounded-full blur-sm opacity-80"></div>
             </div>
           </motion.div>
         </div>
