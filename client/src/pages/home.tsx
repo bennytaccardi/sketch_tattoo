@@ -176,12 +176,18 @@ export default function Home() {
             className="flex justify-center"
           >
             <div className="relative">
-              <img
+              <video
                 src={devicePrototypeGif}
-                alt="Dimostrazione del prototipo dell'app SketchTattoo"
+                autoPlay
+                muted
+                loop
+                playsInline
                 className="max-w-xs sm:max-w-md md:max-w-lg w-full h-auto rounded-2xl sm:rounded-3xl shadow-2xl"
                 data-testid="device-prototype"
-              />
+              >
+                <source src={devicePrototypeGif} type="video/mp4" />
+                Il tuo browser non supporta il video.
+              </video>
               <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-background/20 rounded-3xl pointer-events-none"></div>
             </div>
           </motion.div>
