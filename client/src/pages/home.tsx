@@ -7,7 +7,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { Upload, Image, Eye, Clock, Heart, Handshake } from "lucide-react";
 import heroVideoSrc from "@assets/1086524-hd_1280_720_25fps_1757086339730.mp4";
-import devicePrototypeGif from "@assets/file-YwCcOT43HD-unscreen_1757086674659.gif";
+import devicePrototypeGif from "@assets/279eb137b7b44871b670bdf9bc1bf4bd.webm";
 
 interface EmailSignup {
   email: string;
